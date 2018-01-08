@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!-- todo -->
+<html>
+<head>
+	<meta charset="utf-8"> <!-- no closing tag, better to indicate -->
+	<title>Test</title>
+</head>
+<body>
+	<header id="top">
+		header element - Some header information goes here. Usually consists of company logo, some tag line, etc
+		<nav>nav (short for navigation) element - Usually contains links to different parts of the web site.</nav>
+	</header>
+	<h1>Main heading page</h1>
+	<section>
+		Section 1
+		<article>article 1</article>
+		<article>article 2</article>
+	</section>
+
+	<div>
+		Unordered list
+		<ul>
+			<li>Action 1</li>
+			<li>Action 2</li>
+			<ul>
+				<li>Sub action 1</li>
+				<li>Sub action 2</li>	
+			</ul>
+		</ul>
+	</div>
+
+	<div>
+		Ordered list
+		<ol>
+			<li>Action 1</li>
+			<li>Action 2</li>
+			<ol>
+				<li>Sub action 1</li>
+				<li>Sub action 2</li>	
+				<ul>
+					<li>Sub action 1</li>
+					<li>Sub action 2</li>	
+				</ul>
+			</ol>
+		</ol>
+	</div>
+
+	<div>
+		<p>Special symbols
+		&lt; &gt; &amp; &quot; &copy;
+		always&nbsp;together - use for this &amp;nbsp; do not use it like space</p>
+	</div>
+
+	<aside>
+    	Aside -> Some information that relates to the main topic, i.e., related posts.
+  	</aside>
+
+  	<footer>
+  		Footer -> Copyrignt...
+  	</footer>
+  	<a href="same-directory.html" title="same dir link">Linking to a file in the same directory</a>
+
+  	<a href="same-directory.html" title="same dir link">
+  		<div>Linking to a file in the same directory</div></a> <!-- whole line is clickable not only the text -->
+
+  	<a href="http://www.facebook.com/CourseraWebDev" 
+      target="_blank" title="Like Our Page!">Course Facebook Page</a> <!-- _blank - to open new tab -->
+
+    <a href="#top">Go Top</a> <!-- in the doc, such type could point to a specific part -->
+
+    <p>
+    	<img src="picture.jpg" width="400" height="235" alt="Picture with a quote"> &quot;It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.&quot;
+    </p>
+    <p>
+		<img src="http://lorempixel.com/output/nature-q-c-640-480-2.jpg" width="640" height="480">
+	</p><a href="#top">Go Top</a>
+	<p>
+		<img src="picture2.jpg" width="400" height="235"> Note: alt attribute - do not rezerve space for picture even if width &amp; heigth indicated
+	</p>
+
+<!-- Required for automatic page repload after save -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
