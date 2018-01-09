@@ -1,0 +1,56 @@
+p {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.firstClass {
+	font-style: italic;
+}
+
+.secondClass {
+	font-weight: normal;
+	background-color: red;
+}
+
+.secondClass {
+	font-weight: normal;
+	background-color: #999910;
+}
+
+
+body #id1 {
+	color: blue;
+}
+
+div p { /*select all p inside div*/
+	color: red;
+}
+
+div.secondClass { select div with class .secondClass
+	color: transparent;
+}
+
+div > p { /*select all direct child p of div element*/
+	background-color: green; 
+}
+
+div > p:hover{ /*pseudo selector when mouse above elemtn which is first child of div*/
+	font-weight: normal;
+}
+
+p:nth-child(2){ /*any second p tag*/
+	font-size: 70px;
+}
+
+body > div > div.secondClass > p:nth-child(2) {
+	color: blue;
+}
+
+/*:link -> CSS pseudo-class represents an element that has not yet been visited. It matches every unvisited <a>, <area>, or <link> element that has an href attribute.
+  :visited -> already visited
+  :active -> when press down and release button
+*/
+
+/*Note from to to down - if the same fields updated wins last if differen - combine*/
+
+/*Note about complex algorithm of defining which style is more specific*/
